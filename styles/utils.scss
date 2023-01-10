@@ -36,7 +36,6 @@
   align-self: center;
 }
 
-// 绝对定位水平居中
 .l-absolute-hc {
   position: absolute;
   left: 50%;
@@ -56,10 +55,4 @@
 }
 .u-pointer-events {
   pointer-events: none;
-}
-.u-border-1px {
-  position: relative;
-  &:after {
-    @include border-1px();
-  }
 }
