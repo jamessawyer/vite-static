@@ -101,3 +101,17 @@ body.no-webp {
     }
   }
 }
+
+.frame-rules {
+  width: 335px;
+  height: 232px;
+  background: url(/images/frame-rules.png) no-repeat;
+  background-size: cover;
+  margin-top: 27px;
+  padding-top: 63px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
