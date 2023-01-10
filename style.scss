@@ -3,14 +3,14 @@
 
 html {
   scroll-behavior: smooth;
+  background: #170D86;
 }
 
 body {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  min-width: 1200px;
-  background: #C9D7FC;
+  background: #170D86;
   background: url(/images/bg.webp) no-repeat;
   background-size: cover;
   background-position: top center;
@@ -19,470 +19,65 @@ body.no-webp {
   background: url(/images/bg.png);
 }
 
-.header {
-  margin-top: 37px;
-  padding-left: 204px;
-  padding-right: 237px;
-  min-width: 1200px;
-
-  &-logo img {
-    width: 189px;
-    height: 76px;
-  }
-
-  &-nav-list {
-    height: 80px;
-  }
-
-  &-nav-item {
-    margin-left: 25px;
-    height: 100%;
-    position: relative;
-    color: rgba(43, 43, 43, 0.6);
-
-    &.active {
-      color: #2B2B2B;
-    }
-
-    &:not(.active):hover {
-      color: rgba(43, 43, 43, 0.8);
-      transition: all .15s;
-    }
-
-    &:nth-child(1) {
-      width: 65px;
-
-      @media screen and (max-width: 1200px) {
-        width: auto;
-      }
-
-      &:after {
-        content: '';
-        width: 50px;
-        height: 6px;
-        background: #233556;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-    &:nth-child(2) {
-      width: 65px;
-      @media screen and (max-width: 1200px) {
-        width: auto;
-      }
-    }
-    &:nth-child(3) {
-      width: 79px;
-      @media screen and (max-width: 1200px) {
-        width: 98px;
-        width: auto;
-      }
-    }
-    &:nth-child(4) {
-      width: 83px;
-      @media screen and (max-width: 1200px) {
-        width: auto;
-      }
-    }
-  }
-
-  &-nav-link {
-    font-size: 18px;
-    font-weight: 600;
-    color: inherit;
-  }
+.banner {
+  width: 375px;
+  height: 468px;
 }
 
-.home {
-  height: 942px;
-  width: 100%;
-  position: relative;
-
-  background: url(/images/AIFUN-font.png) no-repeat;
-  background-size: 1409px 242px;
-  background-position: 75% 45%;
-
-  .machine-wrapper {
-    position: relative;
-  }
-  picture.machine {
-    source, img {
-      width: 653px;
-      height: 927px;
-    }
-  }
-
-  picture.rabbit {
-    position: absolute;
-    top: 280px;
-    right: -320px;
-
-    source, img {
-      width: 230px;
-      height: 230px;
-    }
-  }
-  
-  picture.lip {
-    position: absolute;
-    bottom: 90px;
-    left: -420px;
-
-    source, img {
-      width: 423px;
-      height: 418px;
-    }
-  }
-
-
-  picture.coins {
-    position: absolute;
-    bottom: -30px;
-    right: -450px;
-
-    source, img {
-      width: 410px;
-      height: 410px;
-    }
-  }
-
-  img.hand {
-    width: 110px;
-    height: 112px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
-
-  .title {
-    color: #fff;
-    position: absolute;
-    top: 86px;
-    left: -270px;
-
-    .main {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 44px;
-      line-height: 52px;
-      letter-spacing: -0.02em;
-    }
-
-    .sub {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 23px;
-      letter-spacing: 1px;
-    }
-  }
-
-  .slogan {
-    color: #fff;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 52px;
-    letter-spacing: -0.02em;
-    position: absolute;
-    top: 157px;
-    right: -350px;
-  }
-
-}
-
-.bubbles {
-  height: 464px;
-  width: 100%;
-  margin-top: 50px;
-
-  &-wrapper {
-    position: relative;
-    width: 450px;
-    height: 100%;
-  }
-
-  picture.iphone {
-    position: absolute;
-    left: -80%;
-    top: -20%;
-    source, img {
-      width: 464px;
-      height: 464px;
-    }
-  }
-  picture.bubble-goose {
-    position: absolute;
-    bottom: 0;
-    right: -30%;
-    source, img {
-      width: 332px;
-      height: 332px;
-    }
-  }
-}
-
-#introduce {
-  margin-top: 50px;
-  .game {
-    width: 426px;
-    height: 196px;
-    margin-bottom: 70px;
-  }
-
-  picture.pool {
-    source, img {
-      width: 507px;
-      height: 518px;
-    }
-  }
-
-  .contents {
-    color: #fff;
-    font-style: normal;
-    margin-left: 80px;
-
-    .content {
-      margin-bottom: 60px;
-      max-width: 842px;
-    }
-
-    .title {
-      font-weight: 700;
-      font-size: 44px;
-      line-height: 52px;
-      letter-spacing: -0.02em;
-    }
-    .sub {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 23px;
-      letter-spacing: 1px;
-      margin-top: 40px;
-    }
-  }
-}
-
-.markup-wrapper {
-  width: 554px;
-  height: 500px;
-  position: relative;
-
-  picture.makeup {
-    position: absolute;
-    right: -50%;
-    top: 20%;
-    source, img {
-      width: 330px;
-      height: 415px;
-    }
-  }
-}
-
-#cooperation {
+.frames {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -17px;
   color: #fff;
-  font-style: normal;
-
-  picture.goose {
-    source, img {
-      width: 513px;
-      height: 769px;
-    }
-  }
-
-  .brands {
-    margin-left: 160px;
-  }
-
-  .title {
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 52px;
-    letter-spacing: -0.02em;
-
-    & + .sub {
-      margin-top: 24px;
-    }
-  }
-  .sub {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 1px;
-  }
-
-  .imgs-container {
-    .sub {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-  }
-
-  .imgs {
-    picture {
-      source, img {
-        width: 88px;
-        height: 88px;
-      }
-
-      & + picture {
-        margin-left: 20px;
-      }
-    }
-  }
 }
+.frame-reward {
+  width: 335px;
+  height: 380px;
+  background: url(/images/frame-reward.png) no-repeat;
+  background-size: cover;
+  padding: 54px 12px 40px 14px;
 
-.play {
-  .img + .img {
-    padding-left: 300px;
+  &__title {
+    line-height: 20px;
   }
 
-  .playground-container {
-    width: 642px;
-    padding-left: 200px;
-  }
-
-  picture.playground {
-    source, img {
-      width: 356px;
-      height: 356px;
-    }
-  }
-
-  picture.phone {
-    source, img {
-      width: 548px;
-      height: 546px;
-    }
-  }
-}
-
-#footer {
-  width: 100%;
-  background: #233556;
-  padding-left: 261px;
-  padding-right: 261px;
-  position: relative;
-
-  .footer-container {
-    padding-top: 48px;
-    padding-bottom: 38px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .logo {
-    img {
-      width: 257px;
-      height: 52px;
+  &__cards {
+    margin-top: 11px;
+    display: grid;
+    grid-auto-flow: column; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 72px); 
+    grid-gap: 9px;
+    
+    .card-header {
+      grid-area: 1 / 1 / 2 / -1;
+      gap: 20px;
     }
 
-    p {
-      font-weight: 500;
-      font-size: 19px;
-      line-height: 132.5%;
-      display: flex;
-      align-items: center;
-      color: #FFFFFF;
-      margin-left: 22px;
-      margin-top: 20px;
-    }
-  }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding-top: 4px;
+      padding-bottom: 4px;
 
-  .button {
-    background: #FA4E39;
-    border-radius: 50px;
-    width: 212px;
-    height: 50px;
+      &-content {
+        gap: 10px;
+      }
 
-    &:hover {
-      background: darken(#FF5A5F, 10%);
-      transition: all 0.2s;
-    }
+      &-icon {
+        width: 64px;
+        height: 64px;
+      }
 
-    &:last-child {
-      margin-left: 28px;
-    }
-
-    img {
-      width: 24px;
-      height: 24px;
-      margin-right: 22px;
-    }
-
-    &-text {
-      color: #fff;
-      font-weight: 600;
-    }
-
-    .text1 {
-      font-size: 12px;
-    }
-    .text2 {
-      font-size: 14px;
-      line-height: 20px;
-    }
-
-  }
-
-  .links {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 280px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-    p {
-      margin-right: 25px;
-    }
-  }
-
-  .copyright {
-    padding-top: 6px;
-    padding-bottom: 12px;
-    text-align: right;
-    color: rgba(255, 255, 255, 0.5);
-
-    .company {
-      font-weight: 600;
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-
-    .separator {
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    a {
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.5);
-
-      &:hover {
-        color: #fff;
+      &-title {
+        font-size: 14px;
+      }
+      &-prize {
+        font-weight: 600;
+        font-size: 20px;
       }
     }
-
-    .icon {
-      margin-right: 4px;
-    }
-  }
   
-  .tent-wrapper {
-    position: absolute;
-    top: -5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  picture.tent {
-    source, img {
-      width: 260px;
-      height: 260px;
-    }
+    
   }
 }
