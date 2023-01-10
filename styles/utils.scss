@@ -1,0 +1,65 @@
+.l-flex {
+  display: flex;
+}
+.l-flex-cc {
+  align-items: center;
+  justify-content: center;
+}
+.l-flex-hc {
+  justify-content: center;
+}
+.l-flex-vc {
+  align-items: center;
+}
+.l-flex-ve {
+  align-items: flex-end;
+}
+.l-flex-between {
+  justify-content: space-between;
+}
+.l-flex-around {
+  justify-content: space-around;
+}
+.l-flex-start {
+  justify-content: flex-start;
+}
+.l-flex-end {
+  justify-content: flex-end;
+}
+.l-flex-column {
+  flex-direction: column;
+}
+.l-flex-grow {
+  flex-grow: 1;
+}
+.l-flex-as-center {
+  align-self: center;
+}
+
+// 绝对定位水平居中
+.l-absolute-hc {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.u-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-round {
+  border-radius: 50%;
+}
+.u-pointer-events {
+  pointer-events: none;
+}
+.u-border-1px {
+  position: relative;
+  &:after {
+    @include border-1px();
+  }
+}
